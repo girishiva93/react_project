@@ -1,0 +1,34 @@
+.bg-myBlack{
+    background-color: black;
+}
+
+.logo{
+    width:200px;
+    padding: 14px 0px 14px 10px
+}
+
+.navbar-nav {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 0rem;
+    margin-right: 100px;
+    gap: 32px;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-dark .navbar-brand {
+    margin-left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-dark .navbar-brand {
+        margin-left: 0px;
+    }
+    .navbar-nav {
+        margin-right: 0px;
+    }
+  }
