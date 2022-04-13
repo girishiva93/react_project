@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import data from "./data";
-import image1 from "./src/image1.jpg";
-import image2 from "./src/image2.jpg";
-import image3 from "./src/image3.jpg";
 import Header from "../navbar&footer/Header";
 const Home = () => {
   const [sliders, setSliders] = useState(data);
