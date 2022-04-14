@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import { slider, aboutCompany } from "./data";
+import { slider, aboutCompany, aboutTeam } from "./data";
 import Header from "../navbar&footer/Header";
+import Trip from "./Trip";
 import "./css/home.css";
-import image1 from "./src/image1.jpg";
+
 const Home = () => {
   const [readMore, setReadMore] = useState(false);
   return (
@@ -28,7 +29,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col md = {6}">
-              <h1 className="about-company-title">About the Company</h1>
+              <h1 className="about-company-title">About Company</h1>
               <p className="about-company-des">
                 {aboutCompany.description}
                 {readMore ? (
@@ -50,7 +51,7 @@ const Home = () => {
               <div id="parent">
                 <div className="left"></div>
                 <img
-                  src={image1}
+                  src={aboutCompany.image}
                   className="about-company-img"
                   alt=""
                   width="100%"
@@ -59,6 +60,35 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section id="companyTeam">
+        <div className="container">
+          <div className="row">
+            <div className="col md = {6}">
+              <div id="parent-layout">
+                <div className="left-layout"></div>
+                <img
+                  src={aboutTeam.image}
+                  className="about-team-img"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
+            <div className="col md = {6}">
+              <h1 className="about-company-title">About Team</h1>
+              <p className="about-team-des">
+                {aboutTeam.description}
+                <a href="#" className="readMore">
+                  ReadMore
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Trip">
+        <Trip />
       </section>
     </>
   );
