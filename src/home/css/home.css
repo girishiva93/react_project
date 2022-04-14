@@ -80,3 +80,32 @@ body {
   width: 30rem;
   height: 20rem;
 }
+
+.about-company-des{
+  color: var(--clr-grey-8);
+  font-size: 1rem;
+  font-family: system-ui;
+  line-height: 1.7;
+  
+}
+
+.readMore{
+  background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-left: 0.25rem;
+    text-transform: capitalize;
+    color: var(--clr-primary-5);
+}
+
+.about-company-des-second{
+  margin-top: 1rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-left: 0.25rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}

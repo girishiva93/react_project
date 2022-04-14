@@ -5,6 +5,7 @@ import Header from "../navbar&footer/Header";
 import "./css/home.css";
 import image1 from "./src/image1.jpg";
 const Home = () => {
+  const [readMore, setReadMore] = useState(false);
   return (
     <>
       <Header />
@@ -28,7 +29,22 @@ const Home = () => {
           <div className="row">
             <div className="col md = {6}">
               <h1 className="about-company-title">About the Company</h1>
-              <p className="about-company-des">{aboutCompany.description}</p>
+              <p className="about-company-des">
+                {aboutCompany.description}
+                {readMore ? (
+                  <p className="about-company-des-second">
+                    {aboutCompany.descriptionSecond}
+                  </p>
+                ) : (
+                  <></>
+                )}
+                <button
+                  className="readMore"
+                  onClick={() => setReadMore(!readMore)}
+                >
+                  {readMore ? null : "Read More"}
+                </button>
+              </p>
             </div>
             <div className="col md = {6}">
               <div id="parent">
