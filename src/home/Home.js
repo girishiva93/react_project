@@ -1,28 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import data from "./data";
+import { slider, aboutCompany } from "./data";
 import Header from "../navbar&footer/Header";
+import "./css/home.css";
+import image1 from "./src/image1.jpg";
 const Home = () => {
-  const [sliders, setSliders] = useState(data);
   return (
     <>
       <Header />
       <Carousel fade={true} pause={false}>
-        {sliders.map((slider) => {
-          const { id, image, quote, title } = slider;
+        {slider.map((sliders) => {
+          const { id, image, quote, title } = sliders;
           return (
-            <Carousel.Item interval={10000}>
-              <img className="d-block w-100" src={image} alt={title} />
+            <Carousel.Item interval={10000} key={id} className="nav-slider">
+              <img className="d-block w-100 vh-100" src={image} alt={title} />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
+                <h1 className="hero-slide-title">{title}</h1>
+                <p className="slider-quote">{quote}</p>
+                <button className="hero-slide-learn-more">Learn More</button>
               </Carousel.Caption>
             </Carousel.Item>
           );
         })}
       </Carousel>
+      <section id="companyAbout">
+        <div className="container">
+          <div className="row">
+            <div className="col md = {6}">
+              <h1 className="about-company-title">About the Company</h1>
+              <p className="about-company-des">{aboutCompany.description}</p>
+            </div>
+            <div className="col md = {6}">
+              <div id="parent">
+                <div className="left"></div>
+                <img
+                  src={image1}
+                  className="about-company-img"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
