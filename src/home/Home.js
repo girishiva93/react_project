@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import { slider, aboutCompany, aboutTeam } from "./data";
+import { slider, aboutCompany, aboutTeam, reviews } from "./data";
 import Header from "../navbar&footer/Header";
 import Trip from "./Trip";
 import "./css/home.css";
@@ -90,6 +90,7 @@ const Home = () => {
       <section id="Trip">
         <Trip />
       </section>
+      <section></section>
     </>
   );
 };

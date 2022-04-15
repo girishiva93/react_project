@@ -56,7 +56,7 @@ export const aboutTeam = {
 export const items = [
   {
     id: 1,
-    title: "Kanchenjunga Basecamp",
+    title: "Everest Basecamp",
     groupSize: "2-14 pax",
     elevation: "up to 4,790m",
     startFrom: "Departs from Kathmandu, Nepal",
@@ -123,7 +123,7 @@ export const items = [
   },
   {
     id: 2,
-    title: "Kanchenjunga Basecamp",
+    title: "Annapurna Basecamp",
     groupSize: "2-14 pax",
     elevation: "up to 4,790m",
     startFrom: "Departs from Kathmandu, Nepal",
@@ -190,7 +190,7 @@ export const items = [
   },
   {
     id: 3,
-    title: "Kanchenjunga Basecamp",
+    title: "Lukla Basecamp",
     groupSize: "2-14 pax",
     elevation: "up to 4,790m",
     startFrom: "Departs from Kathmandu, Nepal",
@@ -258,7 +258,7 @@ export const items = [
   },
   {
     id: 4,
-    title: "Kanchenjunga Basecamp",
+    title: "Lake Side Pokhara",
     groupSize: "2-14 pax",
     elevation: "up to 4,790m",
     startFrom: "Departs from Kathmandu, Nepal",
@@ -389,5 +389,36 @@ export const items = [
         7: "All ground transportation as in the itinerary.",
       },
     ],
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Shiva Giri",
+    description:
+      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
+    profile: image1,
+  },
+  {
+    id: 2,
+    name: "Shiva Giri",
+    description:
+      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
+    profile: image1,
+  },
+  {
+    id: 3,
+    name: "Shiva Giri",
+    description:
+      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
+    profile: image1,
+  },
+  {
+    id: 4,
+    name: "Shiva Giri",
+    description:
+      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
+    profile: image1,
   },
 ];

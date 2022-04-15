@@ -237,3 +237,24 @@ body {
   margin-top: 4rem;
   margin-bottom: 1.5rem;
 }
+
+.rec-arrow-left{
+  position: absolute;
+  z-index: 9999;
+  background-color: white !important;
+  left: 90px;
+}
+
+.eWjCzc:hover:enabled, .eWjCzc:focus:enabled {
+  color: black !important;
+  background-color: rgba(103,58,183,1);
+  box-shadow: 0 0 2px 0 #333;
+}
+
+.rec-arrow-right{
+  position: absolute;
+  z-index: 9999;
+  left: 89%;
+  background-color: white !important;
+}
+
