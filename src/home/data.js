@@ -396,29 +396,33 @@ export const reviews = [
   {
     id: 1,
     name: "Shiva Giri",
+    title: "Best Company to go trekking ",
     description:
       "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
     profile: image1,
   },
   {
     id: 2,
-    name: "Shiva Giri",
+    name: "Nirmal Thing",
+    title: "Best Company to go trekking in 2022",
     description:
-      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
-    profile: image1,
+      "After witnessing the increasing security risks on my mountain expeditions in Pakistan I decided to return to the safe haven of Nepal in 2011. By chance I ended up with an Iceland Trekking and Expeditions team on Himlung (Australian short cut route) that year. Service and price were so rewarding that I’m turning back every Autumn to discover another part of gorgeous Nepal guided by Tendy’s team. Strong porters, experienced climbing sherpas, cooks making delicious pizzas at 5000 meters high make every trip an unforgettable experience. Meeting Tendy at Kathmandu’s airport is like coming home ever since. I got to know Iceland’s manager as a clever person who can give you excellent advice to work out a tailor-made program off the beaten track but also as a pleasant humorous chap. In case events might take a different turn and you have to cope with unexpected problems during your trip, what is not uncommon on adventurous travels in a mountain region like the Himalayas with all its complexities, Tendy has the knowledge, flexibility and experience to find a quick solution meeting up with the expectations of his clients.",
+    profile: image2,
   },
   {
     id: 3,
-    name: "Shiva Giri",
+    name: "Lalit Mahato",
+    title: "Best Company to go trekking 2023",
     description:
-      "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
-    profile: image1,
+      "Meine Empfehlung für Himalaya-Einsteiger und auch Fortgeschrittene:Ich fahre seit 35 Jahren in den Himalaya. Ich habe dabei – wie auch in anderen Ländern dieser Welt – die Erfahrung gewonnen, dass es sehr wichtig ist, in fremden Ländern einen Menschen oder eine Agentur seines Vertrauens zu haben. Tendy Sherpa mit seiner kleinen, verlässlichen Agentur „Iceland Expeditions and Trekkings“ in Kathmandu gehört zu dieser sehr feinen Kategorie von Institutionen. Ich war mit Gruppen oder auch alleine auf vielen hohen Bergen, aber auch auf Trekkings mit „Iceland Expeditions“ bisher seit 25 Jahren unterwegs (insgesamt 50mal in Nepal), und habe mich immer eingebettet und in Sicherheit gefühlt, ",
+    profile: image3,
   },
   {
     id: 4,
-    name: "Shiva Giri",
+    name: "Ramesh Uncle",
+    title: "Best Company to go trekking 2024",
     description:
       "We’re always pleased and confident in our recommendation of Iceland Trekking. Iceland Trekking has guided us since 1990 on seven outstanding treks to different regions of Nepal. Iceland Trekking’s guides and support team are knowledgeable, competent, resourceful, and demonstrate constant attention to hygiene and safety. Their extensive network of guides ensures a high degree of local knowledge, no matter which regions or peaks you chose. The equipment provided by Iceland Trekking is excellent. The food served daily is tasty, abundant, varied, nutritious, and often beautifully presented. Whether in a group of 2 or 12 clients, Iceland Trekking provides a high level of Professionalism at an amazingly low cost. We highly recommend Iceland Trekking for a wonderful trekking holiday in Nepal.",
-    profile: image1,
+    profile: image4,
   },
 ];
