@@ -160,3 +160,80 @@ body {
   width: 30rem;
   height: 20rem;
 }
+
+/* MVP Trip Section  */
+
+.eWjCzc {
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.6em;
+  background-color: rgba(29, 11, 60, 0.1) !important;
+  color: #333;
+  box-shadow: 0 0 2px 0px #333;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  line-height: 50px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.llqNir {
+  /* display: -webkit-box; */
+  /* display: -webkit-flex; */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+  /* -webkit-justify-content: center; */
+  -ms-flex-pack: center !important;
+  /* -webkit-align-items: center; */
+  /* -webkit-box-align: center; */
+  -ms-flex-align: none !important;
+  align-items: normal !important;
+  height:400px !important;
+  width: 55% !important;
+  background-color: white !important;
+  color: #fff;
+  margin: 0px;
+  font-size: 4em;
+  filter: brightness(0.9);
+  column-gap: 10px;
+}
+
+.trip-items-col{
+  position: relative;
+  margin-top: -12px;
+}
+
+.trip-title{
+  margin-top: 0px;
+  color: white;
+  margin-left: 126px;
+  position: absolute;
+  top: -92px;
+  font-weight: bold;
+  
+  
+}
+
+.trip-date{
+  margin-top: 0px;
+  color: white;
+  position: absolute;
+  font-size: 1.4rem;
+  top: -54px;
+  left: 7.8rem;
+  
+}
+
+.trip-heading{
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
