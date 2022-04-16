@@ -205,6 +205,7 @@ body {
   font-size: 4em;
   filter: brightness(0.9);
   column-gap: 10px;
+  cursor: pointer;
 }
 
 .trip-items-col{
@@ -256,6 +257,9 @@ body {
   z-index: 9999;
   left: 89%;
   background-color: white !important;
+}
+#Trip{
+  margin: 5rem auto;
 }
 
 /* Review */
@@ -452,3 +456,117 @@ article.nextSlide {
 .review-button{
 position: relative;
 }
+
+#social-work{
+  margin: 5rem auto;
+}
+/* Trekking Level */
+.trekking-level-img{
+  filter: brightness(0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 33rem;
+  position: relative;
+}
+
+.level-first-circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+top: 6.7rem;
+}
+
+.level-img{
+  position: relative;
+}
+
+.level-logo{
+  width: 96px;
+  margin-left: 1.5rem;
+  margin-top: 10px;
+  color: white;
+  height: auto;
+}
+
+.level-first-circle h3{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.level-first-circle:hover{
+  border-style:solid;
+border-color: #fff;
+cursor: pointer;
+}
+
+.level-second-circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 7.6rem;
+  left: 37rem;
+}
+
+.level-second-circle:hover{
+  border-style:solid;
+border-color: #fff;
+cursor: pointer;
+}
+
+.level-second-circle h3{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.level-third-circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 7.5rem;
+  left: 58rem;
+}
+
+.level-third-circle:hover{
+  border-style:solid;
+border-color: #fff;
+cursor: pointer;
+}
+.level-third-circle h3{
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+  
+.level-fourth-circle{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 1rem;
+  left: 84rem;
+}
+
+.level-fourth-circle:hover{
+  border-style:solid;
+border-color: #fff;
+cursor: pointer;
+}
+
+.level-fourth-circle h3{
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+  

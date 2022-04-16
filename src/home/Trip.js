@@ -14,19 +14,16 @@ const Trip = () => {
   const carouselRef = useRef(null);
   const onNextStart = (currentItem, nextItem) => {
     if (currentItem.index === nextItem.index) {
-      // we hit the last item, go to first item
       carouselRef.current.goTo(0);
     }
   };
   const onPrevStart = (currentItem, nextItem) => {
     if (currentItem.index === nextItem.index) {
-      // we hit the first item, go to last item
       carouselRef.current.goTo(items.length);
     }
   };
   return (
     <div className="container">
-      <h1 className="trip-heading">Most Selling Trip</h1>
       <Carousel
         className="carousel-university"
         breakPoints={breakPoints}
@@ -34,7 +31,7 @@ const Trip = () => {
         onPrevStart={onPrevStart}
         onNextStart={onNextStart}
         disableArrowsOnEnd={false}
-        autoPlaySpeed={1500}
+        autoPlaySpeed={10000}
         enableAutoPlay
         pagination={false}
       >

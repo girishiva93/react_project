@@ -3,6 +3,7 @@ import image2 from "./src/image2.jpg";
 import image3 from "./src/image3.jpg";
 import image4 from "./src/image4.jpg";
 import team from "./src/team.jpg";
+import donation_pic from "./src/donation.jpg";
 
 export const slider = [
   {
@@ -426,3 +427,11 @@ export const reviews = [
     profile: image4,
   },
 ];
+
+export const donation = {
+  id: 1,
+  image: donation_pic,
+  title: "Social Responsibility",
+  description:
+    "We have been also supporting disabled and homeless children for the last 17 years (Disabled and Rehabilitation Center) with the cooperation of Sponsor Trek Nepal. Social responsibility is an ethical theory in which individuals are accountable for fulfilling their civic duty, and the actions of an individual must benefit the whole of society. In this way, there must be a balance between economic growth and the welfare of society and the environment. If this equilibrium is maintained, then social responsibility is accomplished.",
+};
