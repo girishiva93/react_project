@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Row, Col } from "react-bootstrap";
 import { slider, aboutCompany, aboutTeam, reviews, donation } from "./data";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
@@ -11,6 +11,11 @@ import moderate from "./src/moderate.png";
 import hard from "./src/hard.png";
 import mountaineering from "./src/mountaineering.png";
 import "./css/home.css";
+// importing image
+import image1 from "./src/image1.jpg";
+import image2 from "./src/image5.jpg";
+import image3 from "./src/image3.jpg";
+import image4 from "./src/image4.jpg";
 
 const Home = () => {
   const [readMore, setReadMore] = useState(false);
@@ -175,10 +180,70 @@ const Home = () => {
           </button>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <h1>The activities we provide</h1>
+          <p>
+            {" "}
+            Iceland trekking and expedition has been providing services required
+            for mountain expedition, peak climbing, camping trek, lodge trek and
+            other activities related with this field over two decades.
+          </p>
+          <Row>
+            <Col xs={12} md={8}>
+              <div className="trekking-parent">
+                <img
+                  src={image2}
+                  alt=""
+                  width="100%"
+                  className="trekking-img-home"
+                />
+                <h1 className="trekking-heading">Trekking</h1>
+              </div>
+
+              <Row>
+                <Col md={6}>
+                  <div className="trekking-parent-i">
+                    <img
+                      src={image3}
+                      alt=""
+                      className="trekking-img-home-i"
+                      width="100%"
+                    />
+                    <h1 className="Expeditions-heading">Expeditions</h1>
+                  </div>
+                </Col>
+                <Col md={6}>
+                  <div className="trekking-parent-i">
+                    <img
+                      src={image4}
+                      alt=""
+                      className="trekking-img-home-ii"
+                      width="100%"
+                    />
+                    <h1 className="Expeditions-heading">Trekking Peaks</h1>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+            <Col xs={6} md={4}>
+              <div className="trekking-parent">
+                <img
+                  src={image1}
+                  alt=""
+                  className="trekking-img-home-iii"
+                  width="100%"
+                />
+                <h1>Tours</h1>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </section>
       <section id="social-work">
         <div className="container">
           <div className="row">
-            <div className="col md = {6}">
+            <div className="col md">
               <h1 className="about-company-title">{donation.title}</h1>
               <p className="about-company-des">{donation.description}</p>
             </div>
