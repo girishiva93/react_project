@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-import { slider, aboutCompany, aboutTeam, reviews, donation } from "./data";
+import {
+  slider,
+  aboutCompany,
+  aboutTeam,
+  reviews,
+  donation,
+  items,
+} from "./data";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import Header from "../navbar&footer/Header";
@@ -227,14 +234,14 @@ const Home = () => {
               </Row>
             </Col>
             <Col xs={6} md={4}>
-              <div className="trekking-parent">
+              <div className="trekking-parent-2">
                 <img
                   src={image1}
                   alt=""
                   className="trekking-img-home-iii"
                   width="100%"
                 />
-                <h1>Tours</h1>
+                <h1 className="tour-title">Tours</h1>
               </div>
             </Col>
           </Row>
@@ -259,6 +266,92 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <h1>2022 Offers</h1>
+          <p>
+            Book a memorable adventure trip at great price! Grab our best offer
+            and pack the things for the journey you dream about. See our
+            recommendations.
+          </p>
+          <Row>
+            <Col>
+              <div className="details">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title">Everest Base Camp Trek</h3>
+                <p className="details-date">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="details-second">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title-i">Everest Base Camp Trek</h3>
+                <p className="details-date-i">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="details">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title">Everest Base Camp Trek</h3>
+                <p className="details-date">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="details">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title">Everest Base Camp Trek</h3>
+                <p className="details-date">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="details-second">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title-i">Everest Base Camp Trek</h3>
+                <p className="details-date-i">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+            <Col>
+              <div className="details">
+                <img
+                  src={image1}
+                  alt=""
+                  width="100%"
+                  className="best-sell-trek-img"
+                />
+                <h3 className="details-title">Everest Base Camp Trek</h3>
+                <p className="details-date">From Apr 01 to Jun 02, 2022</p>
+              </div>
+            </Col>
+          </Row>
         </div>
       </section>
       <section>

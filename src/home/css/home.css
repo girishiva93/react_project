@@ -570,6 +570,7 @@ cursor: pointer;
   font-size: 16px;
 }
 
+/* Trekking details */
 
 .trekking-parent{
   height: 355px;
@@ -615,6 +616,7 @@ cursor: pointer;
   object-fit: cover;
 }
 
+
 .trekking-parent-i img {
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -645,4 +647,101 @@ cursor: pointer;
   margin-left: 0.5rem;
   top: 13rem;
   font-weight: bold;
+}
+
+.trekking-parent-2{
+  height: 100%;
+  display: inline-block; /* change the default display type to inline-block */
+  overflow: hidden;      /* hide the overflow */
+  cursor: pointer;
+  position: relative;
+}
+
+.trekking-img-home-iii{
+  height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.tour-title{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 36.5rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.trekking-parent-2 img {
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  vertical-align: middle;
+}
+
+.trekking-parent-2 img:hover{
+  -webkit-transition: all 0.5s ease-in;
+  transform: scale(1.099);
+}
+
+/* Trek in 2022 */
+
+.details{
+  height: 445px;
+  position: relative;
+  cursor: pointer;
+}
+
+.best-sell-trek-img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-second{
+  height: 510px;
+  position: relative;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.details-title{
+  position: absolute;
+  top: 22.5rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.details-date{
+  position: absolute;
+  top: 25rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+.details-title-i{
+  position: absolute;
+  top: 26.5rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.details-date-i{
+  position: absolute;
+  top: 29rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+
+}
+
+.best-sell-trek-img:hover{
+  filter: brightness(0.8);
 }
