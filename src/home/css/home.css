@@ -477,7 +477,7 @@ position: relative;
   height: 150px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0, 0.5);
-top: 6.7rem;
+  top: 8.7rem;
 }
 
 .level-img{
@@ -510,7 +510,7 @@ cursor: pointer;
   height: 150px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0, 0.5);
-  top: 7.6rem;
+  top: 9.6rem;
   left: 37rem;
 }
 
@@ -533,7 +533,7 @@ cursor: pointer;
   height: 150px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0, 0.5);
-  top: 7.5rem;
+  top: 9.5rem;
   left: 58rem;
 }
 
@@ -554,7 +554,7 @@ cursor: pointer;
   height: 150px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0, 0.5);
-  top: 1rem;
+  top: 3rem;
   left: 84rem;
 }
 
@@ -568,6 +568,10 @@ cursor: pointer;
   color: white;
   text-align: center;
   font-size: 16px;
+}
+
+.level-bg-img{
+  margin-top: 1.8rem;
 }
 
 /* Trekking details */

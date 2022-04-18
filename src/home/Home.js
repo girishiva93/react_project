@@ -348,10 +348,23 @@ const Home = () => {
         </div>
       </section>
       <section>
+        <div className="container">
+          <h3 className="whyus-main-title">Choose Activity</h3>
+          {/* <p>
+            Find your next travel adventure and make it memorable. Explore
+            activities or inquire about custom trips. Check out our popular
+            activities.
+          </p> */}
+        </div>
         <div className="level-img">
           <div className="trekking-level-img ">
             {" "}
-            <img src={level} alt="" width="100%" />{" "}
+            <img
+              src={level}
+              className="level-bg-img"
+              alt=""
+              width="100%"
+            />{" "}
           </div>
           <div className="container">
             <div className="level-first-circle">
@@ -380,11 +393,6 @@ const Home = () => {
               />
               <h3> Hard Treks</h3>
             </div>
-            <p>
-              Choose Activity Find your next travel adventure and make it
-              memorable. Explore activities or inquire about custom trips. Check
-              out our popular activities.
-            </p>
           </div>
         </div>
       </section>

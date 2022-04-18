@@ -6,8 +6,9 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "../home/Home";
 import About from "../about/About.js";
 
-// Navbar
+// Navbar and footer
 import Navbar from "./Header";
+import Footer from "./Footer";
 
 const ReactRouterSetup = () => {
   return (
@@ -17,6 +18,7 @@ const ReactRouterSetup = () => {
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 };

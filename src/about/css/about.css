@@ -69,7 +69,7 @@
     position: relative;
 }
 
-#parent-layout{
+#parent-layout-about{
     position: relative;
     margin-left: 9rem;
     margin-top: 8rem;
@@ -87,7 +87,7 @@
     width: 30rem;
     height: 20rem;
 }
-.left{
+.left-about{
     width: 30rem;
     background-color: rgb(183, 224, 224);
     height: 16rem;
@@ -120,4 +120,20 @@
     left: 0;
     top: 2.9rem;
     background:  rgb(183, 224, 224);
+}
+
+.whyus-desc{
+    text-align: left;
+    letter-spacing: 1.5px;
+
+    margin-top: 0rem;
+
+    margin-bottom: 1rem;
+}
+
+.whyus-desc-i{
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
