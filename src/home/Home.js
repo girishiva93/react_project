@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-import { slider, aboutCompany, aboutTeam, reviews, donation } from "./data";
+import { slider, aboutCompany, aboutTeam, reviews } from "./data";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import Header from "../navbar&footer/Header";
 import Trip from "./Trip";
-import level from "./src/level1.jpg";
-import easy from "./src/easy.png";
-import moderate from "./src/moderate.png";
-import hard from "./src/hard.png";
-import mountaineering from "./src/mountaineering.png";
+import Social from "./Social";
+import Activity from "./Activity";
 import "./css/home.css";
 // importing image
 import image1 from "./src/image1.jpg";
@@ -241,25 +238,7 @@ const Home = () => {
         </div>
       </section>
       <section id="social-work">
-        <div className="container">
-          <div className="row">
-            <div className="col md">
-              <h1 className="about-company-title">{donation.title}</h1>
-              <p className="about-company-des">{donation.description}</p>
-            </div>
-            <div className="col md = {6}">
-              <div id="parent">
-                <div className="left"></div>
-                <img
-                  src={donation.image}
-                  className="about-company-img"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Social />
       </section>
       <section>
         <div className="container">
@@ -348,53 +327,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="container">
-          <h3 className="whyus-main-title">Choose Activity</h3>
-          {/* <p>
-            Find your next travel adventure and make it memorable. Explore
-            activities or inquire about custom trips. Check out our popular
-            activities.
-          </p> */}
-        </div>
-        <div className="level-img">
-          <div className="trekking-level-img ">
-            {" "}
-            <img
-              src={level}
-              className="level-bg-img"
-              alt=""
-              width="100%"
-            />{" "}
-          </div>
-          <div className="container">
-            <div className="level-first-circle">
-              <img src={easy} className="level-logo" alt="easy" width="100%" />
-              <h3>Easy Trek</h3>
-            </div>
-            <div className="level-second-circle">
-              <img
-                src={moderate}
-                className="level-logo"
-                alt="easy"
-                width="100%"
-              />
-              <h3>Moderate Treks</h3>
-            </div>
-            <div className="level-third-circle">
-              <img src={hard} className="level-logo" alt="easy" width="100%" />
-              <h3> Adventurous Treks</h3>
-            </div>
-            <div className="level-fourth-circle">
-              <img
-                src={mountaineering}
-                className="level-logo"
-                alt="easy"
-                width="100%"
-              />
-              <h3> Hard Treks</h3>
-            </div>
-          </div>
-        </div>
+        <Activity />
       </section>
     </>
   );

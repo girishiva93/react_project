@@ -35,7 +35,8 @@ const Footer = () => {
                 <li>About Iceland</li>
                 <li>Trekking</li>
                 <li>Social Responsibility</li>
-                <li>Terms and Conditions Contact</li>
+                <li>Terms and Conditions</li>
+                <li>Contact</li>
               </ul>
             </Col>
             <Col md={2}>
@@ -56,9 +57,16 @@ const Footer = () => {
             </Col>
             <Col md={3}>
               <h3>Get in touch</h3>
+              <ul>
+                <li>Phone : +977 9851031422</li>
+                <li> Email : office@iceland-trekking.com</li>
+              </ul>
             </Col>
             <hr />
-            <p>Copyright © 2022 iceland-trekking.com All rights reserved.</p>
+            <p className="footer-top">
+              Copyright © 2022
+              <span> iceland-trekking.com</span> All rights reserved.
+            </p>
             <p>Site By Sherpa Technologies</p>
           </Row>
         </div>

@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import "./css/about.css";
 import { Row, Col } from "react-bootstrap";
-import { whyus, donation } from "../home/data";
+import { whyus } from "../home/data";
 import logo from "../about/src/logo-microsoft.jpg";
 
+import Activity from "../home/Activity";
+import Social from "../home/Social";
 // importing image
 import image4 from "../home/src/trekking-team.jpg";
-import level from "../home/src/level1.jpg";
-import easy from "../home/src/easy.png";
-import moderate from "../home/src/moderate.png";
-import hard from "../home/src/hard.png";
-import mountaineering from "../home/src/mountaineering.png";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
@@ -91,74 +88,10 @@ const About = () => {
         </div>
       </section>
       <section id="social-work">
-        <div className="container">
-          <div className="row">
-            <div className="col md">
-              <h1 className="about-company-title">{donation.title}</h1>
-              <p className="about-company-des">{donation.description}</p>
-            </div>
-            <div className="col md = {6}">
-              <div id="parent">
-                <div className="left"></div>
-                <img
-                  src={donation.image}
-                  className="about-company-img"
-                  alt=""
-                  width="100%"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Social />
       </section>
       <section>
-        <div className="container">
-          <h3 className="whyus-main-title">Choose Activity</h3>
-          {/* <p>
-            Find your next travel adventure and make it memorable. Explore
-            activities or inquire about custom trips. Check out our popular
-            activities.
-          </p> */}
-        </div>
-        <div className="level-img">
-          <div className="trekking-level-img ">
-            {" "}
-            <img
-              src={level}
-              className="level-bg-img"
-              alt=""
-              width="100%"
-            />{" "}
-          </div>
-          <div className="container">
-            <div className="level-first-circle">
-              <img src={easy} className="level-logo" alt="easy" width="100%" />
-              <h3>Easy Trek</h3>
-            </div>
-            <div className="level-second-circle">
-              <img
-                src={moderate}
-                className="level-logo"
-                alt="easy"
-                width="100%"
-              />
-              <h3>Moderate Treks</h3>
-            </div>
-            <div className="level-third-circle">
-              <img src={hard} className="level-logo" alt="easy" width="100%" />
-              <h3> Adventurous Treks</h3>
-            </div>
-            <div className="level-fourth-circle">
-              <img
-                src={mountaineering}
-                className="level-logo"
-                alt="easy"
-                width="100%"
-              />
-              <h3> Hard Treks</h3>
-            </div>
-          </div>
-        </div>
+        <Activity />
       </section>
     </>
   );

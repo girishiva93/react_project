@@ -14,15 +14,28 @@ footer h3{
 
 footer ul li {
     text-decoration: none;
-    margin-left: 0px;
     font-size: 1.2rem;
 }
 
 footer ul{
     display: grid;
     row-gap: 13px;
+    padding-left: 0px  !important;
 }
 
 .third-col-footer{
 margin-top: 2.5rem;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+footer span{
+    color: #ffcc07;;
+}
+
+.footer-top{
+    padding-top: 1.5rem;
 }
