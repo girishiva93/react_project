@@ -18,7 +18,9 @@ const Header = () => {
                 {" "}
                 About Us{" "}
               </Nav.Link>
-              <Nav.Link>Trekking</Nav.Link>
+              <Nav.Link as={Link} to="/trekking">
+                Trekking
+              </Nav.Link>
               <Nav.Link>Trekking Peaks</Nav.Link>
               <Nav.Link>Mountaineering Expeditions</Nav.Link>
               <Nav.Link>Contact</Nav.Link>

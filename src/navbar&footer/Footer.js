@@ -18,13 +18,13 @@ const Footer = () => {
                 <Col md={5}>
                   <img src={member1} alt="" width="100%" />
                 </Col>
-                <Col md={5}>
+                <Col md={5} className="mb-3">
                   <img src={member2} alt="" width="100%" />
                 </Col>
                 <Col md={5}>
                   <img src={member3} alt="" width="100%" />
                 </Col>
-                <Col md={5}>
+                <Col md={5} className="mb-5">
                   <img src={member4} alt="" width="100%" />
                 </Col>
               </Row>
@@ -58,8 +58,14 @@ const Footer = () => {
             <Col md={3}>
               <h3>Get in touch</h3>
               <ul>
-                <li>Phone : +977 9851031422</li>
-                <li> Email : office@iceland-trekking.com</li>
+                <li>
+                  {" "}
+                  <span>Phone</span> : +977 9851031422
+                </li>
+                <li>
+                  {" "}
+                  <span>Email</span> : office@iceland-trekking.com
+                </li>
               </ul>
             </Col>
             <hr />

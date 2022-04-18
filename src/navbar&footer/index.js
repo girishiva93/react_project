@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Home from "../home/Home";
 import About from "../about/About.js";
+import Trekking from "../trekkingdetails/Trekkingpage";
 
 // Navbar and footer
 import Navbar from "./Header";
@@ -17,6 +18,7 @@ const ReactRouterSetup = () => {
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/trekking" element={<Trekking />}></Route>
       </Routes>
       <Footer />
     </Router>
