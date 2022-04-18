@@ -1,0 +1,123 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-img{
+    height: 85vh;
+    filter: brightness(0.8);
+}
+.img-section{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px rgb(183, 224, 224);
+    display: block;
+    transition: all 500ms ease;
+    margin-bottom: 1rem;
+}
+
+.img-section:hover {
+    background-color: rgb(183, 224, 224);
+    color: #fff;
+    box-shadow: 0 0 0 3px #cde1f8;
+    transition: all 500ms ease;
+}
+
+.why-us-design{
+    float: left;
+    background-color: #f0f0f0;
+    margin-right: 23px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+#why-with-us{
+    background: url("../src/backgroundNepal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whyus-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-us-title{
+    position: absolute;
+    top: -5rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.about-heading{
+    position: relative;
+}
+
+#parent-layout{
+    position: relative;
+    margin-left: 9rem;
+    margin-top: 8rem;
+  
+  }
+
+.about-logo-img{
+    width: 400px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    position: absolute;
+    top: -39px;
+    left: -46px;
+    width: 30rem;
+    height: 20rem;
+}
+.left{
+    width: 30rem;
+    background-color: rgb(183, 224, 224);
+    height: 16rem;
+}
+
+.about-des{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.whyus-main-title{
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;   
+    position: relative;
+}
+
+.whyus-main-title::before{
+    content: " ";
+    display: block;
+    height: 6px;
+    border-radius: 21px;
+    width: 131px;
+    position: absolute;
+    left: 0;
+    top: 2.9rem;
+    background:  rgb(183, 224, 224);
+}

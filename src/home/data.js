@@ -4,6 +4,11 @@ import image3 from "./src/image3.jpg";
 import image4 from "./src/image4.jpg";
 import team from "./src/team.jpg";
 import donation_pic from "./src/donation.jpg";
+import choose1 from "../about/src/whyus-1.png";
+import choose2 from "../about/src/whyus-2.png";
+import choose3 from "../about/src/whyus-3.png";
+import choose4 from "../about/src/whyus-4.png";
+import choose5 from "../about/src/whyus5.png";
 
 export const slider = [
   {
@@ -435,3 +440,48 @@ export const donation = {
   description:
     "We have been also supporting disabled and homeless children for the last 17 years (Disabled and Rehabilitation Center) with the cooperation of Sponsor Trek Nepal. Social responsibility is an ethical theory in which individuals are accountable for fulfilling their civic duty, and the actions of an individual must benefit the whole of society. In this way, there must be a balance between economic growth and the welfare of society and the environment. If this equilibrium is maintained, then social responsibility is accomplished.",
 };
+
+export const whyus = [
+  {
+    id: 1,
+    image: choose1,
+    title: "Safety",
+    description:
+      "The mountains are not only beautiful, but also formidable. We do not take safety of clients and staff lightly. We ensure that our equipment is up to date, our staff are all well-trained and familiar with safety procedures, and we plan ahead for all potential contingencies and make sure that we are covered. Rest assured that you are in very safe hands during your trip.",
+  },
+  {
+    id: 2,
+    image: choose2,
+    title: "Experienced Staff",
+    description:
+      "Most of our staff have been in business for decades. They are well-trained and skilled professionals who have worked in many successful mountain expeditions and peak climbs to Everest, Cho Oyu, Dhaulagiri, Shisapangma, Lhotse, Kanchanjunga, Baruntse, Annapurna IV, Himlung, and Puthahiuchuli to name a few. They have worked with a very diverse and international clientele, including but not limited to clients from Europe, America, Canada, and Japan. This gives them unique insight and the ability to work with people from all over the world.",
+  },
+  {
+    id: 3,
+    image: choose3,
+    title: "Competitive Pricing",
+    description:
+      "Iceland Trekking and Expedition organizes almost every aspect of any trek or expeditions Having been in the business as long as we have, we have been able to find the best people, equipment, and resources for the cheapest price possible. This means that we can provide competitive rates and make sure that you get the most out of your money.",
+  },
+  {
+    id: 4,
+    image: choose4,
+    title: "Organized",
+    description:
+      "Expeditions and treks are a massive undertaking, where a small misstep can have extreme consequences. We recognize this and ensure that all our expeditions, treks, and peak climbs are meticulously planned and prepared for. Every day is accounted for, every person knows their specific role, and contingency plans for every potential event is laid out. This does not mean that expeditions with Iceland is a strict, rigid affair. Our staff know how to balance fun with work, and will make sure that you enjoy the trip to the fullest.",
+  },
+  {
+    id: 5,
+    image: choose5,
+    title: "Responsible",
+    description:
+      "We take the responsibility of taking our clients to the summit of the world very seriously. We recognize that our clients have entrusted with us their time, their money, and even their lives. We want to make sure that we just not only do justice to this trust, but perform our responsibilities with honesty, integrity, and dedication.",
+  },
+  {
+    id: 6,
+    image: choose3,
+    title: "Budget",
+    description:
+      "We take the responsibility of taking our clients to the summit of the world very seriously. We recognize that our clients have entrusted with us their time, their money, and even their lives. We want to make sure that we just not only do justice to this trust, but perform our responsibilities with honesty, integrity, and dedication.",
+  },
+];

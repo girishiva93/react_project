@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-import {
-  slider,
-  aboutCompany,
-  aboutTeam,
-  reviews,
-  donation,
-  items,
-} from "./data";
+import { slider, aboutCompany, aboutTeam, reviews, donation } from "./data";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import Header from "../navbar&footer/Header";
@@ -292,7 +285,7 @@ const Home = () => {
             <Col>
               <div className="details-second">
                 <img
-                  src={image1}
+                  src={image2}
                   alt=""
                   width="100%"
                   className="best-sell-trek-img"
@@ -304,7 +297,7 @@ const Home = () => {
             <Col>
               <div className="details">
                 <img
-                  src={image1}
+                  src={image3}
                   alt=""
                   width="100%"
                   className="best-sell-trek-img"
@@ -330,7 +323,7 @@ const Home = () => {
             <Col>
               <div className="details-second">
                 <img
-                  src={image1}
+                  src={image2}
                   alt=""
                   width="100%"
                   className="best-sell-trek-img"
@@ -342,7 +335,7 @@ const Home = () => {
             <Col>
               <div className="details">
                 <img
-                  src={image1}
+                  src={image3}
                   alt=""
                   width="100%"
                   className="best-sell-trek-img"
