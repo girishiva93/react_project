@@ -485,3 +485,30 @@ export const whyus = [
       "We take the responsibility of taking our clients to the summit of the world very seriously. We recognize that our clients have entrusted with us their time, their money, and even their lives. We want to make sure that we just not only do justice to this trust, but perform our responsibilities with honesty, integrity, and dedication.",
   },
 ];
+
+export const trekkingImage = [
+  {
+    id: 1,
+    img: image1,
+  },
+  {
+    id: 2,
+    img: image2,
+  },
+  {
+    id: 3,
+    img: image3,
+  },
+  {
+    id: 4,
+    img: image4,
+  },
+  {
+    id: 5,
+    img: image1,
+  },
+  {
+    id: 6,
+    img: image2,
+  },
+];
