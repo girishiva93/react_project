@@ -43,9 +43,8 @@
     background-color: #e6ca79;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
-
   ol, ul {
-    padding-left: 1rem;
+    padding-left: 0rem !important;
 }
 
 .price-details{
@@ -158,4 +157,20 @@
     background: transparent;
     padding: 10px 30px;
     font-weight: 500;
+}
+
+.whyus{
+    margin-top: 2rem;
+}
+
+.icon-trekking svg{
+    color: #ffcc07;
+    margin-right: 7px;
+    font-size: 1.6em;
+}
+
+.icon-trekking-hero svg{
+    color: white;
+    margin-right: 7px;
+    font-size: 1.6em;
 }

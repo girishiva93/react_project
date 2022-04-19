@@ -5,7 +5,18 @@ import heroimg from "../home/src/image1.jpg";
 import { trekkingImage } from "../home/data";
 import Scrollspy from "react-scrollspy";
 import { AiOutlineClose } from "react-icons/ai";
+
+import { TiTick } from "react-icons/ti";
+import { FaWalking } from "react-icons/fa";
+
+import { BiTimeFive } from "react-icons/bi";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { GiMountains, GiCornerFlag, GiFootsteps } from "react-icons/gi";
+import { MdPlace } from "react-icons/md";
+
 import { Link } from "react-router-dom";
+import Slider from "../home/Trip";
+import Activity from "../home/Activity";
 
 const Trekkingpage = () => {
   const [model, setModel] = useState(false);
@@ -15,17 +26,32 @@ const Trekkingpage = () => {
     <>
       <section>
         <div className="hero-img-section">
-          <img src={heroimg} alt="" width="100%" />
+          <img src={heroimg} alt="Hero img" width="100%" />
           <div className="trip-hero-short-explain">
             <h1>East Upper Dolpo Trek</h1>
             <p>
               Juphal – Phoksundo – Kangla Pass – Gajyan Khola – Newarla – Jomsom
             </p>
-            <p>Activity: Trekking</p>
-            <p>Grade: Hard</p>
-            <p>Duration: 29 Days</p>
-            <p>Country: Nepal</p>
-            <p>Season: Spring/Autumn</p>
+            <p className="icon-trekking-hero">
+              {" "}
+              <FaWalking /> Activity: Trekking
+            </p>
+            <p className="icon-trekking-hero">
+              {" "}
+              <GiFootsteps /> Grade: Hard
+            </p>
+            <p className="icon-trekking-hero">
+              {" "}
+              <BiTimeFive /> Duration: 29 Days
+            </p>
+            <p className="icon-trekking-hero">
+              {" "}
+              <GiCornerFlag /> Country: Nepal
+            </p>
+            <p className="icon-trekking-hero">
+              {" "}
+              <BiTimeFive /> Season: Spring/Autumn
+            </p>
           </div>
         </div>
       </section>
@@ -71,17 +97,29 @@ const Trekkingpage = () => {
               <section id="section-1">
                 <h2>East Upper Dolpo Trek</h2>
                 <Row>
-                  <Col md={4}>
-                    <p>Group Size : 2-14 pax</p>
+                  <Col md={3}>
+                    <p className="icon-trekking">
+                      {" "}
+                      <BsFillPeopleFill /> Group Size : 2-14 pax
+                    </p>
                   </Col>
                   <Col md={4}>
-                    <p>Group Size : 2-14 pax</p>
+                    <p className="icon-trekking">
+                      {" "}
+                      <GiMountains /> Elevation : Up to 5,400m
+                    </p>
                   </Col>
-                  <Col md={4}>
-                    <p>Group Size : 2-14 pax</p>
+                  <Col md={5}>
+                    <p className="icon-trekking">
+                      {" "}
+                      <MdPlace /> Start From : Departs from Kathmandu, Nepal
+                    </p>
                   </Col>
-                  <Col md={4}>
-                    <p>Group Size : 2-14 pax</p>
+                  <Col md={12}>
+                    <p className="icon-trekking">
+                      {" "}
+                      <BiTimeFive /> Start on : 1st June and 5th September 2022
+                    </p>
                   </Col>
                 </Row>
                 <p>
@@ -136,31 +174,108 @@ const Trekkingpage = () => {
               <section id="section-3">
                 <h2>Inclusions</h2>
                 <ul>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
-                  <li>Full board camping service for whole trekking period.</li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
+                  <li>
+                    {" "}
+                    <TiTick /> Full board camping service for whole trekking
+                    period.
+                  </li>
                 </ul>
               </section>
               <section id="section-4">
                 <h2>Exclusions</h2>
                 <ul>
-                  <li>Hotel in Kathmandu.</li>
-                  <li>Hotel in Kathmandu.</li>
-                  <li>Hotel in Kathmandu.</li>
-                  <li>Hotel in Kathmandu.</li>
-                  <li>Hotel in Kathmandu.</li>
+                  <li>
+                    {" "}
+                    <AiOutlineClose /> Hotel in Kathmandu.
+                  </li>
+                  <li>
+                    {" "}
+                    <AiOutlineClose />
+                    Hotel in Kathmandu.
+                  </li>
+                  <li>
+                    {" "}
+                    <AiOutlineClose />
+                    Hotel in Kathmandu.
+                  </li>
+                  <li>
+                    <AiOutlineClose />
+                    Hotel in Kathmandu.
+                  </li>
+                  <li>
+                    <AiOutlineClose />
+                    Hotel in Kathmandu.
+                  </li>
                 </ul>
               </section>
               <section id="section-5">
@@ -206,6 +321,17 @@ const Trekkingpage = () => {
             </Col>
           </Row>
         </Container>
+      </section>
+      <section>
+        <div className="container">
+          <h1>Similar Trips</h1>
+        </div>
+        <Slider />
+      </section>
+      <section>
+        <div className="whyus">
+          <Activity />
+        </div>
       </section>
     </>
   );
