@@ -4,13 +4,22 @@
     height: 100vh;
 }
 
+
 .trip-hero-short-explain{
     position: absolute;
     background-color: rgb(0, 0, 0,0.5);
     color: white;
     width: 50%;
     padding-left: 8%;
-    top: 25.6rem;
+    top: 21rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.trekking-topic{
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .scrollspy {

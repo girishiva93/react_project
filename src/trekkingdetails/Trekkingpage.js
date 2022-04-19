@@ -95,7 +95,7 @@ const Trekkingpage = () => {
             <Col md={9}>
               {" "}
               <section id="section-1">
-                <h2>East Upper Dolpo Trek</h2>
+                <h2 className="trekking-topic">East Upper Dolpo Trek</h2>
                 <Row>
                   <Col md={3}>
                     <p className="icon-trekking">
