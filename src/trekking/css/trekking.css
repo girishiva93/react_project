@@ -1,0 +1,117 @@
+/* Hero img  */
+.trekking-hero-img {
+    position: relative;
+}
+
+.trekking-hero-img img{
+    height: 80vh;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+/* End Hero Img  */
+
+/* Easy Trek img  */
+
+.trekking-title {
+    position: relative;
+    margin-top: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+
+.trekking-title span{
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    font-size: 34px;
+    opacity: 0.09;
+    font-weight: 800;
+}
+
+.easy-trek-desc{
+    color: black;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.easy-img-overlap{
+    position: relative;
+    margin-left: 0rem;
+    margin-top: 55px;
+}
+
+.easy-img-i{
+    position: absolute;
+    left: 0rem;
+    z-index: 10;
+    top: -2rem;
+}
+
+.easy-img-ii{
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+    z-index: 11
+}
+
+.easy-img-iii{
+    position: absolute;
+    left: 21rem;
+}
+
+/* .easy-img-i, .easy-img-ii, .easy-img-iii > img{
+    width: 30rem;
+    height: 20rem;
+} */
+
+.easy-img-i img{
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;
+    filter: brightness(0.9);
+}
+
+.easy-img-ii img{
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;
+    filter: brightness(0.9);
+}
+
+.easy-img-iii img{
+    width: 25rem;
+    height: 18rem;
+    object-fit: cover;
+    filter: brightness(0.9);
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;    
+}
+
+.explore-trek{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* End Easy Img  */

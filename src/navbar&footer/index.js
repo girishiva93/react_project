@@ -5,7 +5,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Home from "../home/Home";
 import About from "../about/About.js";
-import Trekking from "../trekkingdetails/Trekkingpage";
+// import Trekking from "../trekkingdetails/Trekkingpage";
+import Trekking from "../trekking/Trekking";
 
 // Navbar and footer
 import Navbar from "./Header";

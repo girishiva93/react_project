@@ -1,16 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, memo } from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import { items } from "./data";
 import "./css/home.css";
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 3.5 },
-];
-const Trip = () => {
+const Trip = (check) => {
+  const breakPoints = check.c;
+  console.log(breakPoints);
   const carouselRef = useRef(null);
   const onNextStart = (currentItem, nextItem) => {
     if (currentItem.index === nextItem.index) {
@@ -51,4 +47,4 @@ const Trip = () => {
   );
 };
 
-export default Trip;
+export default memo(Trip);

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
 import { slider, aboutCompany, aboutTeam, reviews } from "./data";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { FaQuoteRight } from "react-icons/fa";
 import Header from "../navbar&footer/Header";
 import Trip from "./Trip";
@@ -125,16 +126,23 @@ const Home = () => {
               <h1 className="about-company-title">About Team</h1>
               <p className="about-team-des">
                 {aboutTeam.description}
-                <a href to="#" className="readMore">
+                <Link to="#" className="readMore">
                   ReadMore
-                </a>
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </section>
       <section id="Trip">
-        <Trip />
+        <Trip
+          c={[
+            { id: 1, width: 1, itemsToShow: 1 },
+            { id: 2, width: 550, itemsToShow: 2 },
+            { id: 3, width: 768, itemsToShow: 3 },
+            { id: 4, width: 1200, itemsToShow: 3.5 },
+          ]}
+        />
       </section>
       <section className="section">
         <div className="title">

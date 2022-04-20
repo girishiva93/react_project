@@ -122,7 +122,7 @@ const Trekkingpage = () => {
                     </p>
                   </Col>
                 </Row>
-                <p>
+                <p className="trip-desc">
                   Dolpa is a remote, trans-Himalayan district in northwestern
                   Nepal. The district is famous for the Phoksundo Lake, a
                   serene, magnificent turquoise water body. Many beautiful
@@ -138,7 +138,7 @@ const Trekkingpage = () => {
                   snip, white-throat tit, wood accentor and crimson-eared
                   rose-finch.
                 </p>
-                <p>
+                <p className="trip-desc">
                   The villages in Dolpa are among the highest settlements on
                   Earth. Most of the inhabitants practice Bon Buddhism, an
                   ancient religion whose roots lie in Animism and Buddhism. The

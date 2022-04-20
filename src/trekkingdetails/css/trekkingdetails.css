@@ -4,6 +4,12 @@
     height: 100vh;
 }
 
+.trip-desc{
+    word-spacing: 11px;
+    line-height: 28px;
+    text-align: justify;
+}
+
 
 .trip-hero-short-explain{
     position: absolute;
