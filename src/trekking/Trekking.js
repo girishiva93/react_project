@@ -5,6 +5,7 @@ import "./css/trekking.css";
 import image1 from "../home/src/image1.jpg";
 import image2 from "../home/src/image2.jpg";
 import image3 from "../home/src/image3.jpg";
+import Activity from "../home/Activity";
 
 const Trekking = () => {
   return (
@@ -120,6 +121,9 @@ const Trekking = () => {
             </Col>
           </Row>
         </div>
+      </section>
+      <section>
+        <Activity />
       </section>
     </>
   );
