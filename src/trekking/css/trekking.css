@@ -40,7 +40,7 @@
 .easy-img-overlap{
     position: relative;
     margin-left: 0rem;
-    margin-top: 55px;
+    margin-top: 5rem;
 }
 
 .easy-img-i{
@@ -54,7 +54,7 @@
     position: absolute;
     top: 10rem;
     right: 15rem;
-    z-index: 11
+    z-index: 11;
 }
 
 .easy-img-iii{
@@ -68,7 +68,7 @@
 } */
 
 .easy-img-i img{
-    width: 25rem;
+    width: 22rem;
     height: 15rem;
     object-fit: cover;
     border:1px solid #fff;
@@ -80,7 +80,7 @@
 }
 
 .easy-img-ii img{
-    width: 25rem;
+    width: 22rem;
     height: 15rem;
     object-fit: cover;
     border:1px solid #fff;
@@ -92,7 +92,7 @@
 }
 
 .easy-img-iii img{
-    width: 25rem;
+    width: 22rem;
     height: 18rem;
     object-fit: cover;
     filter: brightness(0.9);
@@ -115,3 +115,85 @@
 }
 
 /* End Easy Img  */
+
+/* Second - Medium */
+
+.trekking-title-medium{
+    position: relative;
+    margin-top: 7rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+
+.trekking-title-medium span{
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    font-size: 34px;
+    opacity: 0.09;
+    font-weight: 800;
+}
+
+
+.easy-img-overlap-second{
+    position: relative;
+    margin-left: 10rem;
+    margin-top: 8rem;
+}
+
+.medium-img-i{
+    position: absolute;
+    left: 0rem;
+    top: -2rem;
+    z-index: 10;
+}
+
+.medium-img-ii{
+    position: absolute;
+    top: 8rem;
+    right: 7rem;
+    z-index: 9;
+}
+
+.medium-img-iii{
+    position: absolute;
+    left: 18rem;
+}
+
+.medium-img-i img{
+    width: 22rem;
+    height: 15rem;
+    object-fit: cover;
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;
+    filter: brightness(0.9);
+}
+
+.medium-img-ii img{
+    width: 22rem;
+    height: 15rem;
+    object-fit: cover;
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;
+    filter: brightness(0.9);
+}
+
+.medium-img-iii img{
+    width: 22rem;
+    height: 18rem;
+    object-fit: cover;
+    filter: brightness(0.9);
+    border:1px solid #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;    
+}
