@@ -1,19 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
-import { slider, aboutCompany, aboutTeam, reviews } from "./data";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { Link } from "react-router-dom";
+
+// Importing Icon
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
-import Header from "../navbar&footer/Header";
+
+// importing Component
 import Trip from "./Trip";
 import Social from "./Social";
 import Activity from "./Activity";
+
+// importing CSS
 import "./css/home.css";
+
 // importing image
 import image1 from "./src/image1.jpg";
 import image2 from "./src/image5.jpg";
 import image3 from "./src/image3.jpg";
 import image4 from "./src/image4.jpg";
+
+// importing Data
+import { slider, aboutCompany, aboutTeam, reviews } from "./data";
 
 const Home = () => {
   const [readMore, setReadMore] = useState(false);
@@ -56,7 +64,6 @@ const Home = () => {
 
   return (
     <>
-      <Header />
       <Carousel fade={true} pause={false}>
         {slider.map((sliders) => {
           const { id, image, quote, title } = sliders;
@@ -72,6 +79,7 @@ const Home = () => {
           );
         })}
       </Carousel>
+
       <section id="companyAbout">
         <div className="container">
           <div className="row">
@@ -108,6 +116,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section id="companyTeam">
         <div className="container">
           <div className="row">
@@ -134,6 +143,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section id="Trip">
         <Trip
           c={[
@@ -144,6 +154,7 @@ const Home = () => {
           ]}
         />
       </section>
+
       <section className="section">
         <div className="title">
           <h2>
@@ -185,6 +196,7 @@ const Home = () => {
           </button>
         </div>
       </section>
+
       <section>
         <div className="container">
           <h1>The activities we provide</h1>
@@ -245,9 +257,11 @@ const Home = () => {
           </Row>
         </div>
       </section>
+
       <section id="social-work">
         <Social />
       </section>
+
       <section>
         <div className="container">
           <h1>2022 Offers</h1>
@@ -316,7 +330,9 @@ const Home = () => {
                   className="best-sell-trek-img"
                 />
                 <h3 className="details-title-i">Everest Base Camp Trek</h3>
-                <p className="details-date-i">From Apr 01 to Jun 02, 2022</p>
+                <p className="details-date-i">
+                  From ftrip Apr 01 to Jun 02, 2022
+                </p>
               </div>
             </Col>
             <Col>
@@ -334,6 +350,7 @@ const Home = () => {
           </Row>
         </div>
       </section>
+
       <section>
         <Activity />
       </section>

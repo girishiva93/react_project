@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Home from "../home/Home";
 import About from "../about/About.js";
-// import Trekking from "../trekkingdetails/Trekkingpage";
+import Trip from "../trekkingdetails/Trekkingpage";
 import Trekking from "../trekking/Trekking";
 
 // Navbar and footer
@@ -19,6 +19,7 @@ const ReactRouterSetup = () => {
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/trip/:id" element={<Trip />}></Route>
         <Route path="/trekking" element={<Trekking />}></Route>
       </Routes>
       <Footer />

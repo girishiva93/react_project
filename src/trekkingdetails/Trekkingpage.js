@@ -1,26 +1,46 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./css/trekkingdetails.css";
-import heroimg from "../home/src/image1.jpg";
-import { trekkingImage } from "../home/data";
+import { Link } from "react-router-dom";
 import Scrollspy from "react-scrollspy";
-import { AiOutlineClose } from "react-icons/ai";
+import { useParams } from "react-router-dom";
 
+// Importing Images
+import heroimg from "../home/src/image1.jpg";
+
+// Importing Icon
+import { AiOutlineClose } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
 import { FaWalking } from "react-icons/fa";
-
 import { BiTimeFive } from "react-icons/bi";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { GiMountains, GiCornerFlag, GiFootsteps } from "react-icons/gi";
 import { MdPlace } from "react-icons/md";
 
-import { Link } from "react-router-dom";
+// Importing CSS
+import "./css/trekkingdetails.css";
+
+// Importing Component
 import Slider from "../home/Trip";
 import Activity from "../home/Activity";
+
+// Importing Data
+import { items } from "../home/data";
 
 const Trekkingpage = () => {
   const [model, setModel] = useState(false);
   const [tempimgSrc, setTempImgSrc] = useState("");
+
+  const params = useParams();
+
+  const data = items.filter((item) => item.title === params.id);
+  const tripData = data[0];
+
+  // useEffect(() => {
+  //   const data = items.filter((item) => item.title === params.id);
+  //   const dataDetail = data[0];
+  //   console.log(dataDetail);
+  //   setTripData(dataDetail);
+  // }, []);
 
   return (
     <>
@@ -28,33 +48,34 @@ const Trekkingpage = () => {
         <div className="hero-img-section">
           <img src={heroimg} alt="Hero img" width="100%" />
           <div className="trip-hero-short-explain">
-            <h1>East Upper Dolpo Trek</h1>
+            <h1>{tripData.title}</h1>
             <p>
               Juphal – Phoksundo – Kangla Pass – Gajyan Khola – Newarla – Jomsom
             </p>
             <p className="icon-trekking-hero">
               {" "}
-              <FaWalking /> Activity: Trekking
+              <FaWalking /> Activity: {tripData.Activity}
             </p>
             <p className="icon-trekking-hero">
               {" "}
-              <GiFootsteps /> Grade: Hard
+              <GiFootsteps /> Grade: {tripData.Grade}
             </p>
             <p className="icon-trekking-hero">
               {" "}
-              <BiTimeFive /> Duration: 29 Days
+              <BiTimeFive /> Duration: {tripData.Itinerary.length} Days
             </p>
             <p className="icon-trekking-hero">
               {" "}
-              <GiCornerFlag /> Country: Nepal
+              <GiCornerFlag /> Country: {tripData.country}
             </p>
             <p className="icon-trekking-hero">
               {" "}
-              <BiTimeFive /> Season: Spring/Autumn
+              <BiTimeFive /> Season: {tripData.season}
             </p>
           </div>
         </div>
       </section>
+      {/* Main Section Start */}
       <section>
         <Container>
           <Row>
@@ -92,203 +113,80 @@ const Trekkingpage = () => {
                 <button className="reserve-now">Enquiry Now</button>
               </Scrollspy>
             </Col>
+            {/* Trip Right Col Start Here */}
             <Col md={9}>
-              {" "}
               <section id="section-1">
-                <h2 className="trekking-topic">East Upper Dolpo Trek</h2>
+                <h2 className="trekking-topic">{tripData.title}</h2>
                 <Row>
                   <Col md={3}>
                     <p className="icon-trekking">
-                      {" "}
-                      <BsFillPeopleFill /> Group Size : 2-14 pax
+                      <BsFillPeopleFill /> Group Size : {tripData.groupSize}
                     </p>
                   </Col>
                   <Col md={4}>
                     <p className="icon-trekking">
-                      {" "}
-                      <GiMountains /> Elevation : Up to 5,400m
+                      <GiMountains /> Elevation :{tripData.elevation}
                     </p>
                   </Col>
                   <Col md={5}>
                     <p className="icon-trekking">
-                      {" "}
-                      <MdPlace /> Start From : Departs from Kathmandu, Nepal
+                      <MdPlace /> Start From : {tripData.startFrom}
                     </p>
                   </Col>
                   <Col md={12}>
                     <p className="icon-trekking">
-                      {" "}
-                      <BiTimeFive /> Start on : 1st June and 5th September 2022
+                      <BiTimeFive /> Start on : {tripData.starton}
                     </p>
                   </Col>
                 </Row>
-                <p className="trip-desc">
-                  Dolpa is a remote, trans-Himalayan district in northwestern
-                  Nepal. The district is famous for the Phoksundo Lake, a
-                  serene, magnificent turquoise water body. Many beautiful
-                  glaciers can be found near and above the lake area. The
-                  northern regions have some rhododendron and caragana shrubs,
-                  while Salix, Juniper, white Himalayan birch and silver fir
-                  dominate the high meadows of the Himalayas. The region
-                  provides an important habitat for animals such as the snow
-                  leopard, grey wolf, musk deer, blue sheep, ghoral, great
-                  Tibetan sheep, Himalayan tahr, leopard, jackal, and Himalayan
-                  black bear. The region is home to over 200 species of bird
-                  which include yellow-throat marten, Tibetan partridge, wood
-                  snip, white-throat tit, wood accentor and crimson-eared
-                  rose-finch.
-                </p>
-                <p className="trip-desc">
-                  The villages in Dolpa are among the highest settlements on
-                  Earth. Most of the inhabitants practice Bon Buddhism, an
-                  ancient religion whose roots lie in Animism and Buddhism. The
-                  landscape is doted with sacred monasteries, thangka paintings,
-                  and chortens.
-                </p>
+
+                <p className="trip-desc">{tripData.description}</p>
+                <p className="trip-desc">{tripData.description_i}</p>
               </section>
+
               <section id="section-2">
                 <h2>Itinerary</h2>
                 <ul>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
-                  <li>Day 01 – Arrive in Kathmandu.</li>
+                  {tripData.Itinerary.map((el) => (
+                    <li>{el}</li>
+                  ))}
                 </ul>
               </section>
+
               <section id="section-3">
                 <h2>Inclusions</h2>
                 <ul>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
-                  <li>
-                    {" "}
-                    <TiTick /> Full board camping service for whole trekking
-                    period.
-                  </li>
+                  {tripData.Inclusions.map((include) => (
+                    <li>
+                      {" "}
+                      <TiTick /> {include}{" "}
+                    </li>
+                  ))}
                 </ul>
               </section>
+
               <section id="section-4">
                 <h2>Exclusions</h2>
                 <ul>
-                  <li>
-                    {" "}
-                    <AiOutlineClose /> Hotel in Kathmandu.
-                  </li>
-                  <li>
-                    {" "}
-                    <AiOutlineClose />
-                    Hotel in Kathmandu.
-                  </li>
-                  <li>
-                    {" "}
-                    <AiOutlineClose />
-                    Hotel in Kathmandu.
-                  </li>
-                  <li>
-                    <AiOutlineClose />
-                    Hotel in Kathmandu.
-                  </li>
-                  <li>
-                    <AiOutlineClose />
-                    Hotel in Kathmandu.
-                  </li>
+                  {tripData.Exclusions.map((exclude) => (
+                    <li>
+                      {" "}
+                      <AiOutlineClose /> {exclude}
+                    </li>
+                  ))}
                 </ul>
               </section>
+
               <section id="section-5">
                 <h2>Price details</h2>
                 <h3>(All rates are in Euro)</h3>
                 <ul className="price-details">
-                  <li>For 04 pax – 3,720 per/person.</li>
-                  <li>For 04 pax – 3,720 per/person.</li>
-                  <li>For 04 pax – 3,720 per/person.</li>
-                  <li>For 04 pax – 3,720 per/person.</li>
-                  <li>For 04 pax – 3,720 per/person.</li>
+                  {tripData.Prices.map((price) => (
+                    <li>{price}</li>
+                  ))}
                 </ul>
               </section>
+
               <section id="section-6">
                 <h2>From our gallery</h2>
                 <div className={model ? "model open" : "model"}>
@@ -299,20 +197,14 @@ const Trekkingpage = () => {
                   />
                 </div>
                 <div className="gallery">
-                  {trekkingImage.map((item, index) => {
-                    const { img } = item;
+                  {tripData.trekkingImage.map((Img) => {
                     const getImg = (imgSrc) => {
-                      console.log(imgSrc);
                       setTempImgSrc(imgSrc);
                       setModel(true);
                     };
                     return (
-                      <div
-                        className="pics"
-                        key={index}
-                        onClick={() => getImg(img)}
-                      >
-                        <img src={img} alt="trekking img" width="100%" />
+                      <div className="pics" onClick={() => getImg(Img)}>
+                        <img src={Img} alt="trekking img" width="100%" />
                       </div>
                     );
                   })}
@@ -322,12 +214,21 @@ const Trekkingpage = () => {
           </Row>
         </Container>
       </section>
+
       <section>
         <div className="container">
           <h1>Similar Trips</h1>
         </div>
-        <Slider />
+        <Slider
+          c={[
+            { id: 1, width: 1, itemsToShow: 1 },
+            { id: 2, width: 550, itemsToShow: 2 },
+            { id: 3, width: 768, itemsToShow: 3 },
+            { id: 4, width: 1200, itemsToShow: 3.5 },
+          ]}
+        />
       </section>
+
       <section>
         <div className="whyus">
           <Activity />

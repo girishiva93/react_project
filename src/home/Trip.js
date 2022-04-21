@@ -1,7 +1,10 @@
 import React, { useRef, memo } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
+
 import { items } from "./data";
+
 import "./css/home.css";
 
 const Trip = (check) => {
@@ -32,15 +35,17 @@ const Trip = (check) => {
         pagination={false}
       >
         {items.map((item, index) => (
-          <div key={item.id}>
-            <Item>
-              <img src={item.image} className="trip-img" alt={item.title} />
-            </Item>
-            <div className="trip-items-col">
-              <h3 className="trip-title">{item.title}</h3>
-              <p className="trip-date">{item.starton}</p>
+          <Link to={`/trip/${item.title}`}>
+            <div key={item.id}>
+              <Item>
+                <img src={item.image} className="trip-img" alt={item.title} />
+              </Item>
+              <div className="trip-items-col">
+                <h3 className="trip-title">{item.title}</h3>
+                <p className="trip-date">{item.starton}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Carousel>
     </div>

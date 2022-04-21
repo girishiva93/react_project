@@ -1,23 +1,19 @@
 import React from "react";
-import level from "./src/level1.jpg";
 
 // importing img
 import easy from "./src/easy.png";
 import moderate from "./src/moderate.png";
 import hard from "./src/hard.png";
 import mountaineering from "./src/mountaineering.png";
+import level from "./src/level1.jpg";
 
 const Activity = () => {
   return (
     <>
       <div className="container">
         <h3 className="whyus-main-title">Choose Activity</h3>
-        {/* <p>
-            Find your next travel adventure and make it memorable. Explore
-            activities or inquire about custom trips. Check out our popular
-            activities.
-          </p> */}
       </div>
+
       <div className="level-img">
         <div className="trekking-level-img ">
           {" "}

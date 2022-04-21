@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-import "./css/about.css";
 import { Row, Col } from "react-bootstrap";
-import { whyus } from "../home/data";
-import logo from "../about/src/logo-microsoft.jpg";
 
+// import data
+import { whyus } from "../home/data";
+
+// importing Component
 import Activity from "../home/Activity";
 import Social from "../home/Social";
+
+// importing css
+import "./css/about.css";
+
 // importing image
 import image4 from "../home/src/trekking-team.jpg";
+import logo from "../about/src/logo-microsoft.jpg";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
+
   return (
     <>
       <section>
@@ -46,6 +53,7 @@ const About = () => {
           </Row>
         </div>
       </section>
+
       <section id="why-with-us">
         <div className="container">
           <h3 className="whyus-main-title">Why With Us</h3>
@@ -87,9 +95,11 @@ const About = () => {
           </Row>
         </div>
       </section>
+
       <section id="social-work">
         <Social />
       </section>
+
       <section>
         <Activity />
       </section>
