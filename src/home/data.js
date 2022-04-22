@@ -64,11 +64,13 @@ export const items = [
     id: 1,
     title: "Everest Basecamp",
     groupSize: "2-14 pax",
-    elevation: "up to 4,790m",
+    elevation: "up to 8,790m",
     startFrom: "Departs from Kathmandu, Nepal",
     starton: "11th April 2022",
     Activity: "Trekking",
-    Grade: "Hard",
+    Grade: "moderate",
+    GradeDescribe:
+      "This category of treks requires basics outdoor experience and a certain degree of physical aptitude.  If you are physically fit and are the kind of person who enjoys the outdoors, age is not going to be an issue although it would be unwise for very young children to attempt these treks.",
     image: image1,
     country: "Nepal",
     season: "Spring/Autumn",
@@ -133,12 +135,14 @@ export const items = [
     id: 2,
     title: "Annapurna Basecamp",
     groupSize: "2-14 pax",
-    elevation: "up to 4,790m",
+    elevation: "up to 7,790m",
     startFrom: "Departs from Kathmandu, Nepal",
     starton: "11th April 2022",
     image: image4,
     Activity: "Trekking",
-    Grade: "Hard",
+    Grade: "easy",
+    GradeDescribe:
+      "This category of treks can be undertaken by anyone from children to adults and first-timers. These treks would give you a wonderful opportunity to explore beautiful places with your family and add to your trove of treasured memories. Most of the treks of this category are cultural treks, village tours, and lodge treks with trials that have easily available accommodation and other facilities.",
     country: "Nepal",
     season: "Spring/Autumn",
     description:
@@ -208,6 +212,8 @@ export const items = [
     image: image3,
     Activity: "Trekking",
     Grade: "Hard",
+    GradeDescribe:
+      "This category of treks is for those with a strong physique, a lot of outdoor experience, and a taste for extreme adventures. You have to be physically and psychologically prepared to survive in an extreme environment under pressure.",
     country: "Nepal",
     season: "Spring/Autumn",
     description:

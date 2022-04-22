@@ -24,7 +24,9 @@ const Header = () => {
               <Nav.Link as={Link} to="/peaks">
                 Trekking Peaks
               </Nav.Link>
-              <Nav.Link>Mountaineering Expeditions</Nav.Link>
+              <Nav.Link as={Link} to="/expeditions">
+                Mountaineering Expeditions
+              </Nav.Link>
               <Nav.Link>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>

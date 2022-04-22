@@ -1,6 +1,7 @@
 import React from "react";
 import trekkingImg from "../home/src/image1.jpg";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./css/trekking.css";
 import image1 from "../home/src/image1.jpg";
 import image2 from "../home/src/image2.jpg";
@@ -47,7 +48,9 @@ const Trekking = () => {
                 lodge treks with trials that have easily available accommodation
                 and other facilities.
               </p>
-              <button className="explore-trek">Explore Easy Trek</button>
+              <Link to={`/activity/easy`}>
+                <button className="explore-trek">Explore Easy Trek</button>
+              </Link>
             </Col>
           </Row>
           {/* Medium */}
@@ -70,7 +73,9 @@ const Trekking = () => {
                 while the gritty details are worked out by our professional
                 crew.
               </p>
-              <button className="explore-trek">Explore Moderate Trek</button>
+              <Link to={`/activity/moderate`}>
+                <button className="explore-trek">Explore Moderate Trek</button>
+              </Link>
             </Col>
             <Col md={7}>
               <div className="easy-img-overlap-second">
@@ -117,7 +122,11 @@ const Trekking = () => {
                 progress through challenging conditions without any physical or
                 mental stress to you.
               </p>
-              <button className="explore-trek">Explore Adventurous Trek</button>
+              <Link to={`/activity/Hard`}>
+                <button className="explore-trek">
+                  Explore Adventurous Trek
+                </button>
+              </Link>
             </Col>
           </Row>
         </div>
