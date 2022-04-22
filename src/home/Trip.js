@@ -7,9 +7,14 @@ import { items } from "./data";
 
 import "./css/home.css";
 
-const Trip = (check) => {
-  const breakPoints = check.c;
-  console.log(breakPoints);
+const Trip = () => {
+  const breakPoints = [
+    { id: 1, width: 1, itemsToShow: 1 },
+    { id: 2, width: 550, itemsToShow: 2 },
+    { id: 3, width: 768, itemsToShow: 3 },
+    { id: 4, width: 1200, itemsToShow: 3.5 },
+  ];
+  // console.log(breakPoints);
   const carouselRef = useRef(null);
   const onNextStart = (currentItem, nextItem) => {
     if (currentItem.index === nextItem.index) {

@@ -1,0 +1,59 @@
+
+.peak-hero-img img{
+    height: 80vh;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero-section-desc{
+width: 50%;
+background-color: rgb(0, 0, 0, 0.5);
+color: white;
+padding: 3rem 3rem 3rem 7rem;
+position: absolute;
+left: 0%;
+top: 14rem;
+}
+
+.hero-section-desc p{
+    padding-top: 1.5rem;
+}
+
+.peak-banner{
+    position: relative;
+    cursor: pointer;
+}
+
+.peak-banner:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.peak-banner img{
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.peak-banner h3{
+    position: absolute;
+    top: 21rem;
+    left: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.peak-banner p{
+    position: absolute;
+    top: 0.6rem;
+    text-transform: capitalize;
+    right: 0.6rem;
+    color: white;
+    font-weight: 600;
+}
+
+
+  

@@ -145,14 +145,7 @@ const Home = () => {
       </section>
 
       <section id="Trip">
-        <Trip
-          c={[
-            { id: 1, width: 1, itemsToShow: 1 },
-            { id: 2, width: 550, itemsToShow: 2 },
-            { id: 3, width: 768, itemsToShow: 3 },
-            { id: 4, width: 1200, itemsToShow: 3.5 },
-          ]}
-        />
+        <Trip />
       </section>
 
       <section className="section">

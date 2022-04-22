@@ -7,6 +7,7 @@ import Home from "../home/Home";
 import About from "../about/About.js";
 import Trip from "../trekkingdetails/Trekkingpage";
 import Trekking from "../trekking/Trekking";
+import Peaks from "../peaks/TrekkingPeaks";
 
 // Navbar and footer
 import Navbar from "./Header";
@@ -21,6 +22,7 @@ const ReactRouterSetup = () => {
         <Route path="/about" element={<About />}></Route>
         <Route path="/trip/:id" element={<Trip />}></Route>
         <Route path="/trekking" element={<Trekking />}></Route>
+        <Route path="/peaks" element={<Peaks />}></Route>
       </Routes>
       <Footer />
     </Router>
