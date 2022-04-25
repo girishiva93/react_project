@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container">
           <Row>
             <Col md={3}>
-              <h3>Member</h3>
+              <h3>Associate</h3>
               <Row>
                 <Col md={5}>
                   <img src={member1} alt="" width="100%" />
