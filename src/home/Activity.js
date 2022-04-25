@@ -6,6 +6,7 @@ import moderate from "./src/moderate.png";
 import hard from "./src/hard.png";
 import mountaineering from "./src/mountaineering.png";
 import level from "./src/level1.jpg";
+import { Link } from "react-router-dom";
 
 const Activity = () => {
   return (
@@ -21,30 +22,36 @@ const Activity = () => {
         </div>
         <div className="container">
           <div className="level-first-circle">
-            <img src={easy} className="level-logo" alt="easy" width="100%" />
-            <h3>Easy Trek</h3>
+            <Link to={`/activity/easy`}>
+              <img src={easy} className="level-logo" alt="easy" width="100%" />
+              <h3>Easy Trek</h3>
+            </Link>
           </div>
           <div className="level-second-circle">
-            <img
-              src={moderate}
-              className="level-logo"
-              alt="easy"
-              width="100%"
-            />
-            <h3>Moderate Treks</h3>
+            <Link to={`/activity/moderate`}>
+              <img
+                src={moderate}
+                className="level-logo"
+                alt="easy"
+                width="100%"
+              />
+              <h3>Moderate Treks</h3>
+            </Link>
           </div>
           <div className="level-third-circle">
             <img src={hard} className="level-logo" alt="easy" width="100%" />
             <h3> Adventurous Treks</h3>
           </div>
           <div className="level-fourth-circle">
-            <img
-              src={mountaineering}
-              className="level-logo"
-              alt="easy"
-              width="100%"
-            />
-            <h3> Hard Treks</h3>
+            <Link to={`/activity/Hard`}>
+              <img
+                src={mountaineering}
+                className="level-logo"
+                alt="easy"
+                width="100%"
+              />
+              <h3> Hard Treks</h3>
+            </Link>
           </div>
         </div>
       </div>

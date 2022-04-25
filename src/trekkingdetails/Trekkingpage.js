@@ -31,7 +31,6 @@ const Trekkingpage = () => {
   const [tempimgSrc, setTempImgSrc] = useState("");
 
   const params = useParams();
-
   const data = items.filter((item) => item.title === params.id);
   const data_1 = items.filter((items) => items.type === params.id);
   const data_2 = items.filter((items) => items.Grade === params.id);
@@ -422,7 +421,7 @@ const Trekkingpage = () => {
           </section>{" "}
         </>
       ) : (
-        <p>No data were found</p>
+        <p></p>
       )}
       {activityData ? (
         <>
@@ -610,7 +609,7 @@ const Trekkingpage = () => {
           </section>{" "}
         </>
       ) : (
-        <p>Trip Not Found</p>
+        <p></p>
       )}
     </>
   );

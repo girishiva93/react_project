@@ -11,6 +11,7 @@ import Peaks from "../peaks/TrekkingPeaks";
 import Expedition from "../expeditions/Expeditions";
 import { ExpeditionBanner } from "../expeditions/ExpeditionBanner";
 import Activity from "../trekking/Activity";
+import Contact from "../contact/Contact";
 // Navbar and footer
 import Navbar from "./Header";
 import Footer from "./Footer";
@@ -31,6 +32,7 @@ const ReactRouterSetup = () => {
           path="/expeditions-items/:id"
           element={<ExpeditionBanner />}
         ></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </Router>

@@ -62,7 +62,7 @@ export const aboutTeam = {
 export const items = [
   {
     id: 1,
-    title: "Everest Basecamp",
+    title: "Everest Basecamp - 8000",
     groupSize: "2-14 pax",
     elevation: "up to 8,790m",
     startFrom: "Departs from Kathmandu, Nepal",
@@ -206,7 +206,7 @@ export const items = [
     id: 3,
     title: "Lukla Basecamp",
     groupSize: "2-14 pax",
-    elevation: "up to 4,790m",
+    elevation: "up to 7,790m",
     startFrom: "Departs from Kathmandu, Nepal",
     starton: "11th April 2022",
     image: image3,

@@ -135,7 +135,7 @@ const Home = () => {
               <h1 className="about-company-title">About Team</h1>
               <p className="about-team-des">
                 {aboutTeam.description}
-                <Link to="#" className="readMore">
+                <Link to="./about" className="readMore">
                   ReadMore
                 </Link>
               </p>
@@ -202,36 +202,42 @@ const Home = () => {
           <Row>
             <Col xs={12} md={8}>
               <div className="trekking-parent">
-                <img
-                  src={image2}
-                  alt=""
-                  width="100%"
-                  className="trekking-img-home"
-                />
-                <h1 className="trekking-heading">Trekking</h1>
+                <Link to="/trekking">
+                  <img
+                    src={image2}
+                    alt=""
+                    width="100%"
+                    className="trekking-img-home"
+                  />
+                  <h1 className="trekking-heading">Trekking</h1>
+                </Link>
               </div>
 
               <Row>
                 <Col md={6}>
                   <div className="trekking-parent-i">
-                    <img
-                      src={image3}
-                      alt=""
-                      className="trekking-img-home-i"
-                      width="100%"
-                    />
-                    <h1 className="Expeditions-heading">Expeditions</h1>
+                    <Link to="/expeditions">
+                      <img
+                        src={image3}
+                        alt=""
+                        className="trekking-img-home-i"
+                        width="100%"
+                      />
+                      <h1 className="Expeditions-heading">Expeditions</h1>
+                    </Link>
                   </div>
                 </Col>
                 <Col md={6}>
                   <div className="trekking-parent-i">
-                    <img
-                      src={image4}
-                      alt=""
-                      className="trekking-img-home-ii"
-                      width="100%"
-                    />
-                    <h1 className="Expeditions-heading">Trekking Peaks</h1>
+                    <Link to="/peaks">
+                      <img
+                        src={image4}
+                        alt=""
+                        className="trekking-img-home-ii"
+                        width="100%"
+                      />
+                      <h1 className="Expeditions-heading">Trekking Peaks</h1>
+                    </Link>
                   </div>
                 </Col>
               </Row>
