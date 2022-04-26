@@ -1,0 +1,286 @@
+@media only screen and (max-width: 420px) {
+  /* Hero Slider */
+  .carousel-caption {
+    right: 0%;
+    bottom: 0rem !important;
+    left: 0% !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+    padding-left: 1rem;
+    width: 100%;
+    padding-right: 0rem;
+    color: #fff;
+  }
+  .nav-slider img {
+    height: 50vh !important;
+    object-fit: cover;
+    margin-top: 6.5rem;
+  }
+  .hero-slide-title {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .slider-quote {
+    display: none;
+  }
+  /* About Start */
+  .about-responsive {
+    display: block;
+  }
+
+  .desktop-about-img {
+    display: none;
+  }
+  .about-company-img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 1rem;
+    height: 100%;
+    object-fit: cover;
+  }
+  .left {
+    display: none;
+  }
+  .col {
+    width: 100% !important;
+    flex: none !important;
+  }
+  .about-company-title {
+    display: none;
+  }
+
+  #parent {
+    position: relative;
+    margin-left: 0rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+  }
+  #companyAbout {
+    margin-top: 30px;
+  }
+
+  .about-responsive-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 3px;
+    display: block;
+    letter-spacing: 0.1rem;
+  }
+
+  .about-company-des {
+    color: var(--clr-grey-8);
+    font-size: 1.2rem;
+    font-family: system-ui;
+    line-height: 1.9;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .about-company-des-second {
+    color: var(--clr-grey-8);
+    font-size: 1.2rem;
+    font-family: system-ui;
+    line-height: 1.9;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  /* About Team */
+  .left-layout {
+    display: none;
+}
+#parent-layout {
+  position: relative;
+  margin-left: 0rem;
+  margin-top: 0px;
+}
+
+#companyTeam {
+  margin-top: 20px;
+}
+.about-responsive-title{
+  margin-bottom: 2rem;
+}
+.about-team-des {
+  color: var(--clr-grey-8);
+  font-size: 1.2rem;
+  font-family: system-ui;
+  line-height: 1.9;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.readMore {
+
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* Trip */
+#Trip {
+  margin: 1rem auto;
+}
+.rec-arrow-left {
+  left: 0px;
+}
+.llqNir {
+  width: 100% !important;
+}
+.llqNir img {
+  border-radius: 1rem;
+}
+.trip-title {
+  margin-left: 135px;
+}
+.trip-date {
+  color: white;
+  position: absolute;
+  font-size: 1.4rem;
+  top: -60px;
+  left: 8.5rem;
+}
+.about-team-img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin-bottom: 1.1rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 20rem;
+}
+/* Review Section */
+.section{
+  margin: 2rem auto;
+}
+.section-center {
+  margin-top: 3rem;
+}
+.trekking-parent {
+  height: auto;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 1rem;
+}
+.trekking-parent-i {
+  border-radius: 1rem;
+}
+.trekking-parent-2  {
+  border-radius: 1rem;
+}
+.trekking-heading {
+  position: absolute;
+  top: 9rem;
+  color: white;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.trekking-parent-i {
+  margin-bottom: 1.3rem;
+}
+.col-6 {
+  flex: none;
+  width: 100% !important;
+}
+.tour-title {
+  top: 13rem;
+}
+/* Social Work */
+#social-work {
+  margin: 2rem auto;
+}
+.social-img-responsive-desktop{
+  display: none;
+}
+.details {
+  margin-top: 0rem;
+  margin-bottom: 1.3rem;
+}
+.best-sell-trek-img {
+  border-radius: 1rem;
+}
+.level-bg-img {
+  margin-top: 1.8rem;
+  height: 510px;
+  object-fit: cover;
+}
+.level-first-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 10rem;
+  left: 4rem;
+}
+.level-logo {
+  width: 60px;
+  margin-left: 1.5rem;
+  margin-top: 6px;
+  color: white;
+  height: auto;
+
+}
+.level-second-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 10rem;
+  left: 17rem;
+}
+.level-second-circle h3 {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.level-third-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 20rem;
+  left: 4rem;
+}
+.level-fourth-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 20rem;
+  left: 17rem;
+}
+.whyus-main-title {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.row > * {
+  width: auto !important;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}

@@ -56,6 +56,18 @@ body {
 }
 /* About Start */
 
+.about-responsive{
+  display: none;
+}
+
+.about-company-title{
+display: block;
+}
+
+.about-responsive-title{
+  display: none;
+}
+
 
 #companyAbout{
   margin-top: 80px;
@@ -749,3 +761,4 @@ cursor: pointer;
 .best-sell-trek-img:hover{
   filter: brightness(0.8);
 }
+

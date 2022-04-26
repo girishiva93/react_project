@@ -10,6 +10,7 @@ import Social from "../home/Social";
 
 // importing css
 import "./css/about.css";
+import "./css/aboutResponsive.css";
 
 // importing image
 import image4 from "../home/src/trekking-team.jpg";
@@ -29,6 +30,17 @@ const About = () => {
             <h1 className="about-us-title">About us</h1>
           </div>
           <Row>
+            <div className="col md = {6} about-responsive">
+              <div id="parent">
+                <div className="left"></div>
+                <img
+                  src={logo}
+                  className="about-company-img"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
             <Col>
               <p className="about-des">
                 After more than fifteen years of experience in trekking and
@@ -42,7 +54,7 @@ const About = () => {
                 a pleasant, and memorable trip.
               </p>
             </Col>
-            <Col>
+            <Col className="about-us-img">
               <div id="parent-layout-about">
                 <div className="left-about"></div>
                 <div className="about-logo-img">

@@ -13,7 +13,7 @@ import Activity from "./Activity";
 
 // importing CSS
 import "./css/home.css";
-
+import "./css/responsive.css";
 // importing image
 import image1 from "./src/image1.jpg";
 import image2 from "./src/image5.jpg";
@@ -83,6 +83,18 @@ const Home = () => {
       <section id="companyAbout">
         <div className="container">
           <div className="row">
+            <h1 className="about-responsive-title">About Company</h1>
+            <div className="col md = {6} about-responsive">
+              <div id="parent">
+                <div className="left"></div>
+                <img
+                  src={aboutCompany.image}
+                  className="about-company-img"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+            </div>
             <div className="col md = {6}">
               <h1 className="about-company-title">About Company</h1>
               <p className="about-company-des">
@@ -102,7 +114,7 @@ const Home = () => {
                 </button>
               </p>
             </div>
-            <div className="col md = {6}">
+            <div className="col md = {6} desktop-about-img">
               <div id="parent">
                 <div className="left"></div>
                 <img
@@ -120,6 +132,7 @@ const Home = () => {
       <section id="companyTeam">
         <div className="container">
           <div className="row">
+            <h1 className="about-responsive-title">About Team</h1>
             <div className="col md = {6}">
               <div id="parent-layout">
                 <div className="left-layout"></div>

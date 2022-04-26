@@ -1,0 +1,17 @@
+@media only screen and (max-width: 420px) { 
+    .about-us-img{
+        display: none;
+    }
+    .hero-img {
+        height: 31vh;
+        filter: brightness(0.8);
+        margin-bottom: 2rem;
+    }
+    .about-des {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .why-us-design {
+        margin-right: 0px;
+    }
+}
