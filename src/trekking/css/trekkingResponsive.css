@@ -1,0 +1,62 @@
+
+@media only screen and (max-width: 420px) { 
+    .trekking-hero-img img {
+        height: 40vh;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .easy-img-i img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+    .easy-img-ii {
+        position: absolute;
+        top: 3rem;
+        right: -19rem;
+        z-index: 11;
+    }
+
+    .easy-img-ii img{
+        width: 13rem;
+    height: 8rem;
+    }
+
+    .easy-img-overlap {
+        position: relative;
+        margin-left: 0rem;
+        margin-top: 10rem;
+        margin-bottom: 21rem;
+    }
+
+    .easy-img-iii img{
+        width: 13rem;
+    height: 8rem;
+    }
+
+    .easy-img-iii {
+        position: absolute;
+        left: 11rem;
+        top:-1rem;
+    }
+
+    .trekking-img{
+        display: none;
+    }
+
+    .medium-img-i img {
+        width: 13rem;
+    height: 8rem;
+    }
+
+    .medium-img-iii img {
+        width: 13rem;
+        height: 8rem;
+    }
+
+    .medium-section{
+        display: none;
+    }
+    
+}

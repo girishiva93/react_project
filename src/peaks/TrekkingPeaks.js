@@ -7,6 +7,7 @@ import { items } from "../home/data";
 
 // importing css
 import "./css/peaks.css";
+import "./css/peaksResponsive.css";
 
 // Importing Images
 import heroimg from "../home/src/image1.jpg";
